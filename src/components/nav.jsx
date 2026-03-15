@@ -11,6 +11,14 @@ const NAV_LINKS = [
   // { name: "Blog", path: "/blog" },
 ];
 
+const NAV_LINKS_TWO = [
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+  { name: "Services", path: "/services" },
+  { name: "Case Studies", path: "/case-studies" },
+  { name: "Contact", path: "/contact" },
+];
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -91,7 +99,7 @@ export default function Navbar() {
             <XIcon size={28} />
           </button>
           <ul className="flex flex-col space-y-8 text-3xl">
-            {NAV_LINKS.map((link) => (
+            {NAV_LINKS_TWO.map((link) => (
               <li key={link.name}>
                 <NavLink
                   to={link.path}
@@ -106,7 +114,7 @@ export default function Navbar() {
                 </NavLink>
               </li>
             ))}
-            <li className="pt-2">
+            {/* <li className="pt-2">
               <Link
                 to="/contact"
                 className="btn btn-main !text-2xl !py-[30px]"
@@ -114,7 +122,7 @@ export default function Navbar() {
               >
                 Contact us
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       )}
