@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@plugin "daisyui"{
+  themes: light --default;
+}
+@plugin "daisyui/theme" {
+  name: "light";
+  --color-primary: oklch(30.95% 0.034 224.08);
+  --color-secondary: oklch(55.35% 0.0409 202.54);
+  --color-accent: oklch(78.28% 0.136 46.25);
+  --color-neutral: oklch(96.01% 0.0069 67.74);
+}
+
+@theme {
+  --font-sans: "Archivo", sans-serif;
+}
+
+body, html {
+  @apply !font-normal text-base md:!text-[18px] !shadow-none;
+}
+
+.btn {
+  @apply !text-sm h-10 px-4 rounded-full !shadow-none !drop-shadow-none !text-shadow-none !border-none !font-medium;
+}
+
+.btn-main {
+  @apply !text-primary !bg-accent;
+}
+
+.btn-blur {
+  @apply text-white border !border-white/20 !border-solid bg-primary/10 transition-all backdrop-blur-sm;
+}
+
+
+label {
+  @apply text-primary text-base;
+}
+
+.input,
+textarea {
+  @apply !outline-none focus:!border-accent mt-2 !bg-transparent !border-0 !border-b !border-gray-300 !px-0 !rounded-none;
+}
+
+.input {
+  @apply h-10;
+}
+
+.text-primary-color {
+  @apply text-slate-600;
+}
+
+.badge {
+  @apply uppercase pb-4 leading-loose;
+}
+
+.title {
+  @apply text-3xl lg:text-4xl font-medium leading-tight;
+}
+
+.titletwo {
+  @apply text-2xl lg:text-3xl font-medium leading-tight;
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
