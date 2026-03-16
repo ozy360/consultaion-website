@@ -43,8 +43,8 @@ export default function DifferenceComponent() {
               enterprise sales pipeline. This team gets business, not just
               consulting."
             </p>
-            <div className="flex items-center justify-between mt-12">
-              <div className="flex items-center gap-4">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mt-12 space-y-6 lg:space-y-0">
+              <div className="flex flex-wrap items-center gap-4">
                 <img
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80"
                   className="w-12 h-12 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all"
@@ -90,7 +90,7 @@ export default function DifferenceComponent() {
               strategy into action plans our teams could actually execute. No
               jargon, no theory, just practical guidance that moved the needle."
             </p>
-            <div className="flex items-center justify-between mt-12">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mt-12 space-y-6 lg:space-y-0">
               <div className="flex items-center gap-4">
                 <img
                   src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80"
